@@ -43,10 +43,8 @@ requirements:
     - scipy
 
 test:
-  requires:
-    - {{ compiler('c') }}
-  imports:
-    - pysteps
+  commands:
+    - python -v -c "import pysteps"
 
 about:
   home: https://pysteps.github.io/
