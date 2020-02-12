@@ -10,7 +10,7 @@ source:
   sha256: 968d53eee09ef4a16a1dc01341a3a32fe6ed4a7cd231d14598c9cffd3405362a
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py<36]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
@@ -26,7 +26,7 @@ requirements:
     - attrdict
     - jsmin
     - scipy
-    - matplotlib
+    - matplotlib-base
     - jsonschema
   run:
     - python
@@ -34,7 +34,7 @@ requirements:
     - attrdict
     - jsmin
     - jsonschema
-    - matplotlib
+    - matplotlib-base
     - netCDF4
     - {{ pin_compatible('numpy') }}
     - opencv
