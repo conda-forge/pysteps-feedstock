@@ -23,7 +23,6 @@ requirements:
     - cython
     - pip
     - openmp 4.0.*  # [osx]
-    - attrdict
     - jsmin
     - scipy
     - matplotlib-base
@@ -31,7 +30,6 @@ requirements:
   run:
     - python
     - openmp 4.0.*  # [osx]
-    - attrdict
     - jsmin
     - jsonschema
     - matplotlib-base
