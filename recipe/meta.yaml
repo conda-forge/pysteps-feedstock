@@ -19,7 +19,7 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
-    - numpy>=1.16
+    - numpy >=1.16
     - cython
     - pip
     - openmp 4.0.*  # [osx]
