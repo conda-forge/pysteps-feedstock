@@ -1,5 +1,5 @@
 {% set name = "pysteps" %}
-{% set version = "1.4" %}
+{% set version = "1.4.0" %}
 
 package:
   name: {{ name|lower }}
