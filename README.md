@@ -5,9 +5,13 @@ Home: https://pysteps.github.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysteps-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python framework for short-term ensemble prediction systems
+
+Development: https://github.com/pySTEPS/pysteps
+
+Documentation: https://pysteps.readthedocs.io/
 
 pySTEPS is a community-driven initiative for developing and maintaining an
 easy to use, modular, free and open-source Python framework for short-term
