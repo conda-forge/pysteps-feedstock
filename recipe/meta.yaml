@@ -10,7 +10,7 @@ source:
   sha256: abbe28a92d21c90fdb3543b131dc0b2b77fc31a9c77c7772a7f6427bc637d5ec
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -19,14 +19,10 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
-    - numpy
+    - numpy>=1.19
     - cython
     - pip
     - openmp 4.0.*  # [osx]
-    - jsmin
-    - scipy
-    - matplotlib-base
-    - jsonschema
   run:
     - python
     - openmp 4.0.*  # [osx]
