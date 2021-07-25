@@ -22,7 +22,7 @@ requirements:
     - numpy >=1.17
     - cython
     - pip
-    - openmp # [osx]
+    - openmp  # [osx]
   run:
     - python
     - openmp  # [osx]
