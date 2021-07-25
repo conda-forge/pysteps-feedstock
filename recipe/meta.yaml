@@ -19,16 +19,16 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
-    - numpy >=1.19
+    - numpy >=1.17
     - cython
     - pip
-    - openmp 4.0.*  # [osx]
+    - openmp # [osx]
   run:
     - python
-    - openmp 4.0.*  # [osx]
+    - openmp # [osx]
     - jsmin
     - jsonschema
-    - matplotlib-base
+    - matplotlib
     - netCDF4
     - {{ pin_compatible('numpy') }}
     - opencv
