@@ -25,7 +25,7 @@ requirements:
     - openmp # [osx]
   run:
     - python
-    - openmp # [osx]
+    - openmp  # [osx]
     - jsmin
     - jsonschema
     - matplotlib
