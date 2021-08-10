@@ -10,8 +10,8 @@ source:
   sha256: abbe28a92d21c90fdb3543b131dc0b2b77fc31a9c77c7772a7f6427bc637d5ec
 
 build:
-  number: 0
-  skip: true  # [py<36]
+  number: 2
+  skip: true  # [win and py>38]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -19,20 +19,16 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
-    - numpy 1.16.*
+    - numpy >=1.17
     - cython
     - pip
-    - openmp 4.0.*  # [osx]
-    - jsmin
-    - scipy
-    - matplotlib-base
-    - jsonschema
+    - openmp  # [osx]
   run:
     - python
-    - openmp 4.0.*  # [osx]
+    - openmp  # [osx]
     - jsmin
     - jsonschema
-    - matplotlib-base
+    - matplotlib
     - netCDF4
     - {{ pin_compatible('numpy') }}
     - opencv
