@@ -1,11 +1,11 @@
-About pysteps
-=============
+About pysteps-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysteps-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pysteps.github.io/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pysteps-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python framework for short-term ensemble prediction systems
 
