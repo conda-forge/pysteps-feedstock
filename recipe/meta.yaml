@@ -12,19 +12,20 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
+  skip: true  # [py<39 or py>311]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
-    - python >=3.9
+    - python
     - numpy >=1.17
     - cython
     - pip
     - openmp  # [osx]
   run:
-    - python >=3.9
+    - python
     - openmp  # [osx]
     - jsmin
     - jsonschema
