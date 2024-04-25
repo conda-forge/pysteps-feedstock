@@ -18,13 +18,13 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
   host:
-    - python
+    - python >=3.9
     - numpy >=1.17
     - cython
     - pip
     - openmp  # [osx]
   run:
-    - python
+    - python >=3.9
     - openmp  # [osx]
     - jsmin
     - jsonschema
