@@ -10,7 +10,7 @@ source:
   sha256: 2f3486be1816bc4b47c05691692b4818b67aae7852eaf7f5eb10e8eecb45f506
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   skip: true  # [py<39 or py>311]
 
@@ -31,7 +31,6 @@ requirements:
     - jsonschema
     - matplotlib
     - netCDF4
-    - {{ pin_compatible('numpy') }}
     - opencv
     - pillow
     - pyproj
