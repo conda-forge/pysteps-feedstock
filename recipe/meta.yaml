@@ -1,13 +1,13 @@
 {% set name = "pysteps" %}
-{% set version = "1.12.0" %}
+{% set version = "1.13.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c6df331315671fe551c4f2ed8d7fea69ff1c0c71f97ae6b1a685172e0350ab58
+  url: https://files.pythonhosted.org/packages/a1/22/ddc583bbae5b4cdd34c7cb2e30e96f88df4ad9197065502ad4e330d8e4b1/pysteps-{{ version }}.tar.gz
+  sha256: a3dbd72a6fe368b42d7761efe4a3b658b12224ec51e2cf7276641d2fc43cf20d
 
 build:
   number: 0
@@ -36,6 +36,7 @@ requirements:
     - pillow
     - pyproj
     - scipy
+    - setuptools
 
 test:
   imports:
