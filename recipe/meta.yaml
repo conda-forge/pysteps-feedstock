@@ -24,10 +24,6 @@ requirements:
     - setuptools >=40.8.0
     - cython >=0.29.2
     - numpy >=1.13
-    - jsmin
-    - scipy
-    - matplotlib-base
-    - jsonschema
     - pip
   run:
     - python
