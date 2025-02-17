@@ -33,10 +33,13 @@ requirements:
     - python
     - jsmin
     - scipy
-    - matplotlib-base
     - jsonschema
     - numpy
-
+    - matplotlib
+    - netCDF4
+    - opencv
+    - pillow
+    - pyproj
 test:
   imports:
     - pysteps
