@@ -1,5 +1,5 @@
 {% set name = "pysteps" %}
-{% set version = "1.18.1" %}
+{% set version = "1.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysteps-{{ version }}.tar.gz
-  sha256: 7760df2af412898c52bd9c618243bf296a8657e90bb3438617b6935b6f4a67c6
+  sha256: 93166b4c742a30e43a4a9d3ab48a9b9916f5ff1b99a69d95a7ad9cd20d2eb2ac
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   skip: true  # [py<311 or py>313]
 
