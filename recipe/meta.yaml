@@ -1,5 +1,5 @@
 {% set name = "pysteps" %}
-{% set version = "1.21.0" %}
+{% set version = "1.21.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysteps-{{ version }}.tar.gz
-  sha256: 43c4785fd14f59723a0ec8fecace6098ad921eb3e3b5c89f505e244d13b130ac
+  sha256: eca1c7b58c42e15410f1b704ccf8eea1da32674db2037f7dafbc1c951c9a2d72
 
 build:
   number: 0
